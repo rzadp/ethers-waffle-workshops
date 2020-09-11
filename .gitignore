@@ -1,0 +1,9 @@
+**/node_modules
+**/yarn-error.log
+**/.DS_Store
+.idea
+.vscode
+.idea
+dist
+flatten
+build
