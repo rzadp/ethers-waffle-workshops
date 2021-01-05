@@ -5,7 +5,7 @@ import Template from '../build/Template.json';
 
 use(solidity);
 
-describe('Template', () => {
+describe.skip('Template', () => {
   const [wallet] = new MockProvider().getWallets();
   let contract: Contract;
 
