@@ -2,15 +2,20 @@ on:
   push:
     branches:
       - master
+  pull_request:
 
 jobs:
   test:
     runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node: ['10.x', '12.x', '14.x', '15.x']
+        os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1.4.4
         with:
-          version: 12.15
+          version: ${{ matrix.node }}
       - run: yarn install --frozen-lockfile
       - run: yarn build
       - run: yarn test
