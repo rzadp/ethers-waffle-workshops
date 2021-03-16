@@ -28,12 +28,12 @@ describe('Template', () => {
   });
 
   it('Adds unsafely', async () => {
-    const result = await contract.unsafeAdd();
+    const result = await contract.unsafeSubstraction();
     console.log(`1 - 2 in unsafe math is ${result.toString()}`)
   });
 
   it('Throws on safe add', async () => {
-    await expect(contract.safeAdd()).to.be.reverted;
+    await expect(contract.safeSubstraction()).to.be.reverted;
   });
 });
  

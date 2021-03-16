@@ -14,12 +14,12 @@ contract Template is Ownable {
 
     }
 
-    function unsafeAdd() public pure returns(uint) {
+    function unsafeSubstraction() public pure returns(uint) {
         uint base = 1;
         return base - 2;
     }
 
-    function safeAdd() public pure  returns(uint) {
+    function safeSubstraction() public pure  returns(uint) {
         uint base = 1;
         return base.sub(2);
     }
