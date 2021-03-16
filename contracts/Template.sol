@@ -19,7 +19,7 @@ contract Template is Ownable {
         return base - 2;
     }
 
-    function safeSubstraction() public pure  returns(uint) {
+    function safeSubstraction() public pure returns(uint) {
         uint base = 1;
         return base.sub(2);
     }
