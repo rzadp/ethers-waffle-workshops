@@ -6,7 +6,8 @@ import Template from '../build/Template.json';
 use(solidity);
 
 describe('Template', () => {
-  const [wallet] = new MockProvider().getWallets();
+  const provider = new MockProvider()
+  const [wallet] = provider.getWallets();
   let contract: Contract;
 
   beforeEach(async () => {
@@ -22,9 +23,9 @@ describe('Template', () => {
   });
 
   it('Transfers ether to the contract', async () => {
-    expect(await contract.provider.getBalance(contract.address)).to.eq(0)
+    expect(await provider.getBalance(contract.address)).to.eq(0)
     await contract.myFunction({value: 123});
-    expect(await contract.provider.getBalance(contract.address)).to.eq(123)
+    expect(await provider.getBalance(contract.address)).to.eq(123)
   });
 
   it('Adds unsafely', async () => {

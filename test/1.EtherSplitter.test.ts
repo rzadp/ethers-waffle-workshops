@@ -10,7 +10,8 @@ describe('Ether Splitter', () => {
   let splitter: Contract;
 
   beforeEach(async () => {
-    splitter = await deployContract(wallet, EtherSplitter, []);
+    const contractConstructorArgs: any[] = []
+    splitter = await deployContract(wallet, EtherSplitter, contractConstructorArgs);
   });
 
   it('Deploys correctly and has an address', async () => {
