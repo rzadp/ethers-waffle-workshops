@@ -6,12 +6,12 @@ import EtherSplitter from '../build/EtherSplitter.json';
 use(solidity);
 
 describe('Ether Splitter', () => {
-  const [wallet, first, second, third] = new MockProvider().getWallets();
+  const [alice, bob, charlie, david] = new MockProvider().getWallets();
   let splitter: Contract;
 
   beforeEach(async () => {
     const contractConstructorArgs: any[] = []
-    splitter = await deployContract(wallet, EtherSplitter, contractConstructorArgs);
+    splitter = await deployContract(alice, EtherSplitter, contractConstructorArgs);
   });
 
   it('Deploys correctly and has an address', async () => {

@@ -7,11 +7,11 @@ use(solidity);
 
 describe('Template', () => {
   const provider = new MockProvider()
-  const [wallet] = provider.getWallets();
+  const [alice] = provider.getWallets();
   let contract: Contract;
 
   beforeEach(async () => {
-    contract = await deployContract(wallet, Template, []);
+    contract = await deployContract(alice, Template, []);
   });
 
   it('Deploys correctly and has an address', async () => {
