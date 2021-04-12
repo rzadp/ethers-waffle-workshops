@@ -2,7 +2,11 @@ pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract MyToken is IERC20 {
+contract WaffleToken is IERC20 {
+    string public constant name = "WaffleToken";
+    string public constant symbol = "WFL";
+    uint8 public constant decimals = 18;
+
     mapping(address => uint) balances;
 
     constructor(uint _initialBalance) public {
