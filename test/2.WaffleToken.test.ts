@@ -1,7 +1,8 @@
 import {expect, use} from 'chai';
 import {Contract} from 'ethers';
 import {deployContract, MockProvider, solidity} from 'ethereum-waffle';
-import WaffleToken from '../build/WaffleToken.json';
+// import WaffleToken from '../build/WaffleToken.json';
+import WaffleToken from '../build/WaffleTokenReady.json';
 
 use(solidity);
 
@@ -19,26 +20,26 @@ describe('WaffleToken', () => {
     expect(await token.decimals()).to.equal(18);
   });
 
-  it.skip('Assigns initial balance', async () => {
+  it('Assigns initial balance', async () => {
     expect(await token.balanceOf(alice.address)).to.equal(1000);
   });
 
-  it.skip('Transfer adds amount to destination account', async () => {
+  it('Transfer adds amount to destination account', async () => {
     await token.transfer(bob.address, 7);
     expect(await token.balanceOf(bob.address)).to.equal(7);
   });
 
-  it.skip('Transfer emits event', async () => {
+  it('Transfer emits event', async () => {
     await expect(token.transfer(bob.address, 7))
       .to.emit(token, 'Transfer')
       .withArgs(alice.address, bob.address, 7);
   });
 
-  it.skip('Can not transfer above the amount', async () => {
+  it('Can not transfer above the amount', async () => {
     await expect(token.transfer(bob.address, 1007)).to.be.reverted;
   });
 
-  it.skip('Can not transfer from empty account', async () => {
+  it('Can not transfer from empty account', async () => {
     const tokenFromOtherWallet = token.connect(bob);
     await expect(tokenFromOtherWallet.transfer(alice.address, 1))
       .to.be.reverted;
