@@ -36,5 +36,11 @@ describe('Template', () => {
   it('Throws on safe add', async () => {
     await expect(contract.safeSubstraction()).to.be.reverted;
   });
+
+  it('Calculates gas used', async () => {
+    const tx = await contract.myFunction({value: 123});
+    const txReceipt = await tx.wait()
+    expect(txReceipt.gasUsed).to.be.gt(0)
+  })
 });
  
