@@ -32,7 +32,7 @@ describe("Ether Splitter", () => {
     const charlieBalance = await charlie.getBalance();
     const aliceBalance = await alice.getBalance();
 
-    const transactionValue: number = 20;
+    const transactionValue: number = Math.floor((Math.random() * 100) / 2) * 2;
 
     await splitter.spliter({ value: transactionValue });
     expect(aliceBalance).to.not.equal(await alice.getBalance());
@@ -46,15 +46,26 @@ describe("Ether Splitter", () => {
   });
 
   it("Ether split - events foundsSplit", async () => {
-    await expect(splitter.spliter({ value: 50 }))
+    const transactionValue: number = Math.floor((Math.random() * 100) / 2) * 2;
+
+    await expect(splitter.spliter({ value: transactionValue }))
       .to.emit(splitter, "foundsSplit")
-      .withArgs(bob.address, charlie.address, 25);
+      .withArgs(bob.address, charlie.address, transactionValue / 2);
   });
 
   it("Ether split - events remainderReturned", async () => {
-    await expect(splitter.spliter({ value: 37 })).to.emit(
-      splitter,
-      "remainderReturned"
-    );
+    const transactionValue: number = Math.floor(Math.random() * 100) + 1;
+
+    if (transactionValue % 2 === 0) {
+      await expect(splitter.spliter({ value: transactionValue })).not.emit(
+        splitter,
+        "remainderReturned"
+      );
+    } else {
+      await expect(splitter.spliter({ value: transactionValue })).to.emit(
+        splitter,
+        "remainderReturned"
+      );
+    }
   });
 });
