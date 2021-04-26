@@ -44,4 +44,17 @@ describe("Ether Splitter", () => {
       bobBalance.add(transactionValue / 2)
     );
   });
+
+  it("Ether split - events foundsSplit", async () => {
+    await expect(splitter.spliter({ value: 50 }))
+      .to.emit(splitter, "foundsSplit")
+      .withArgs(bob.address, charlie.address, 25);
+  });
+
+  it("Ether split - events remainderReturned", async () => {
+    await expect(splitter.spliter({ value: 37 })).to.emit(
+      splitter,
+      "remainderReturned"
+    );
+  });
 });

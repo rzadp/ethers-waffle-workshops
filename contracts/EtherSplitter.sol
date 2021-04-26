@@ -26,10 +26,20 @@ contract EtherSplitter {
 
         uint256 splitBalance = value.div(2);
         if (value != splitBalance.mul(2)) {
+            emit remainderReturned();
             msg.sender.transfer(value - splitBalance.mul(2));
         }
 
         firstAddr.transfer(splitBalance);
         secondAddr.transfer(splitBalance);
+
+        emit foundsSplit(firstAddr, secondAddr, splitBalance);
     }
+
+    event foundsSplit(
+        address firstAddr,
+        address secondAddr,
+        uint256 splitBalance
+    );
+    event remainderReturned();
 }
