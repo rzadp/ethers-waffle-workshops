@@ -7,7 +7,9 @@ pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/math/SafeMath.sol";
 
-contract EtherSplitter {
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract EtherSplitter is Ownable {
     using SafeMath for uint256;
 
     address payable public firstAddr;
@@ -20,7 +22,7 @@ contract EtherSplitter {
         secondAddr = _secondAddr;
     }
 
-    function spliter() public payable {
+    function spliter() public payable onlyOwner {
         require(msg.value >= 1, "You must send eth");
         uint256 value = msg.value;
 

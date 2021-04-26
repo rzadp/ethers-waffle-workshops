@@ -68,4 +68,16 @@ describe("Ether Splitter", () => {
       );
     }
   });
+
+  it("Only owner can run function", async () => {
+    const transactionValue: number = Math.floor((Math.random() * 100) / 2) * 2;
+
+    const spitterWithBob = splitter.connect(bob);
+    const spitterWithCharlie = splitter.connect(charlie);
+
+    await expect(spitterWithBob.spliter({ value: transactionValue })).to.be
+      .reverted;
+    await expect(spitterWithCharlie.spliter({ value: transactionValue })).to.be
+      .reverted;
+  });
 });
