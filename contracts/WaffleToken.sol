@@ -24,6 +24,10 @@ contract WaffleToken is IERC20 {
     function transfer(address recipient, uint256 amount) external override returns (bool) {
         revert('Not Implemented');
     }
+    
+    
+    // Part 2
+    
 
     function allowance(address owner, address spender) external override view returns (uint256) {
         revert('Not Implemented');
