@@ -1,4 +1,4 @@
-pragma solidity ^0.6.0;
+pragma solidity ^0.8.0;
 
 /**
  * EtherSplitter
@@ -6,6 +6,6 @@ pragma solidity ^0.6.0;
  */
 
 contract EtherSplitter {
-    constructor() public {
+    constructor() {
     }
 }
