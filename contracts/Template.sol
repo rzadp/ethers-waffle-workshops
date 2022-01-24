@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 contract Template is Ownable {
     using SafeMath for uint256;
 
-    constructor() public {
+    constructor() {
     }
 
     function myFunction() public payable {
