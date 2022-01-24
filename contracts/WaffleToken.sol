@@ -1,4 +1,4 @@
-pragma solidity ^0.6.0;
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -9,7 +9,7 @@ contract WaffleToken is IERC20 {
 
     mapping(address => uint) balances;
 
-    constructor(uint _initialBalance) public {
+    constructor(uint _initialBalance) {
 
     }
 
