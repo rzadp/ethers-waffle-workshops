@@ -15,12 +15,16 @@ contract Template is Ownable {
     }
 
     function unsafeSubstraction() public pure returns(uint) {
-        uint base = 1;
-        return base - 2;
+        unchecked {
+            uint base = 1;
+            return base - 2;
+        }
     }
 
     function safeSubstraction() public pure returns(uint) {
-        uint base = 1;
-        return base.sub(2);
+        unchecked {
+            uint base = 1;
+            return base.sub(2);
+        }
     }
 }
