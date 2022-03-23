@@ -1,19 +1,17 @@
 import {expect, use} from 'chai';
-import {Contract} from 'ethers';
 import {deployContract, MockProvider, solidity} from 'ethereum-waffle';
-import TokenSplitter from '../build/TokenSplitter.json';
-import WaffleToken from '../build/WaffleToken.json';
+import {TokenSplitter, TokenSplitter__factory, WaffleToken, WaffleToken__factory} from '../build/types';
 
 use(solidity);
 
 describe('Token Splitter', () => {
   const [alice, bob, charlie, david] = new MockProvider().getWallets();
-  let token: Contract;
-  let splitter: Contract;
+  let token: WaffleToken;
+  let splitter: TokenSplitter;
 
   beforeEach(async () => {
-    token = await deployContract(alice, WaffleToken, [1000]);
-    splitter = await deployContract(alice, TokenSplitter, [token.address]);
+    token = await deployContract(alice, WaffleToken__factory, [1000]);
+    splitter = await deployContract(alice, TokenSplitter__factory, [token.address]);
   });
 
   it('Deploys correctly', async () => {

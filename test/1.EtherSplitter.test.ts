@@ -1,17 +1,15 @@
 import {expect, use} from 'chai';
-import {Contract} from 'ethers';
 import {deployContract, MockProvider, solidity} from 'ethereum-waffle';
-import EtherSplitter from '../build/EtherSplitter.json';
+import {EtherSplitter, EtherSplitter__factory} from '../build/types';
 
 use(solidity);
 
 describe('Ether Splitter', () => {
   const [alice, bob, charlie, david] = new MockProvider().getWallets();
-  let splitter: Contract;
+  let splitter: EtherSplitter;
 
   beforeEach(async () => {
-    const contractConstructorArgs: any[] = []
-    splitter = await deployContract(alice, EtherSplitter, contractConstructorArgs);
+    splitter = await deployContract(alice, EtherSplitter__factory, []);
   });
 
   it('Deploys correctly and has an address', async () => {

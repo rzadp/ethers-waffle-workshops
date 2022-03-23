@@ -1,17 +1,16 @@
 import {expect, use} from 'chai';
-import {Contract} from 'ethers';
 import {deployContract, MockProvider, solidity} from 'ethereum-waffle';
-import Template from '../build/Template.json';
+import {Template, Template__factory} from '../build/types';
 
 use(solidity);
 
 describe('Template', () => {
   const provider = new MockProvider()
   const [alice] = provider.getWallets();
-  let contract: Contract;
+  let contract: Template;
 
   beforeEach(async () => {
-    contract = await deployContract(alice, Template, []);
+    contract = await deployContract(alice, Template__factory, []);
   });
 
   it('Deploys correctly and has an address', async () => {
@@ -43,4 +42,4 @@ describe('Template', () => {
     expect(txReceipt.gasUsed).to.be.gt(0)
   })
 });
- 
+ 

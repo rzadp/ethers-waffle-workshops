@@ -4,5 +4,6 @@
   "sourceDirectory": "./contracts",
   "outputDirectory": "./build",
   "nodeModulesDirectory": "./node_modules",
-  "flattenOutputDirectory": "./flatten"
+  "flattenOutputDirectory": "./flatten",
+  "typechainEnabled": true
 }

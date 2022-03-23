@@ -1,17 +1,15 @@
 import {expect, use} from 'chai';
-import {Contract} from 'ethers';
 import {deployContract, MockProvider, solidity} from 'ethereum-waffle';
-// import WaffleToken from '../build/WaffleToken.json';
-import WaffleToken from '../build/WaffleTokenReady.json';
+import {WaffleTokenReady, WaffleTokenReady__factory} from '../build/types'; // TODO: replace with WaffleToken and use your own version
 
 use(solidity);
 
 describe('WaffleToken', () => {
   const [alice, bob] = new MockProvider().getWallets();
-  let token: Contract;
+  let token: WaffleTokenReady;
 
   beforeEach(async () => {
-    token = await deployContract(alice, WaffleToken, [1000]);
+    token = await deployContract(alice, WaffleTokenReady__factory, [1000]);
   });
 
   it('Has a proper metadata', async () => {
