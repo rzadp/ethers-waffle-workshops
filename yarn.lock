@@ -55,53 +55,53 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@ethereum-waffle/chai@4.0.0-alpha.4":
-  version "4.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/chai/-/chai-4.0.0-alpha.4.tgz#f94d271df79dab7720ac4fbe4d5b3c8b4ddfcda6"
-  integrity sha512-vJRQsCkN4eeFigK6T+mriNfJcvrT2k0AFME4TD/J8Ch3UyluhtFNefHehzxM1i7Ga0FkZmA22DNFtvO5LTxrZA==
+"@ethereum-waffle/chai@4.0.0-alpha.5":
+  version "4.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/chai/-/chai-4.0.0-alpha.5.tgz#3aae7ed9490c1ae68744b4255caa5bee29a594c8"
+  integrity sha512-iNoEKE0umSiaKfdR5jO8z+vuFWI2piSryrwzY/CXveZFs1v8hEdIsSDNLXk32y+G1dgvMwYHxFwalsq5XGOhHA==
   dependencies:
-    "@ethereum-waffle/provider" "4.0.0-alpha.4"
+    "@ethereum-waffle/provider" "4.0.0-alpha.5"
     ethers "^5.6.1"
 
-"@ethereum-waffle/compiler@4.0.0-alpha.4":
-  version "4.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/compiler/-/compiler-4.0.0-alpha.4.tgz#3fda51ade0baecfea85e0d18cc945603dfb1ec66"
-  integrity sha512-enpZ9QDwIyfusmDYB/2M2O1BuJvd7hBdneqfshVDWouI2mzu8xNlfWB5U3dw1KXQ88rbbffbS2BV2T1eLRzUzg==
+"@ethereum-waffle/compiler@4.0.0-alpha.5":
+  version "4.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/compiler/-/compiler-4.0.0-alpha.5.tgz#59c1d34ca7df0469aec706990051f1224844e660"
+  integrity sha512-EYt5+tTFLE5iMbxMjEmw4C5u/sclwYcOmUDsZhWWjHRqRtmfHzwh5rS4CFiHExOfgKUso9vv+ntEgaO6K2ZZ3Q==
   dependencies:
     "@ethersproject/abi" "^5.6.0"
     "@ethersproject/bytes" "^5.6.0"
     "@ethersproject/providers" "^5.6.1"
     "@resolver-engine/imports" "^0.3.3"
     "@resolver-engine/imports-fs" "^0.3.3"
-    "@typechain/ethers-v5" "^9.0.0"
+    "@typechain/ethers-v5" "^10.0.0"
     "@types/mkdirp" "^0.5.2"
     "@types/node-fetch" "^2.6.1"
     mkdirp "^0.5.1"
     node-fetch "^2.6.7"
 
-"@ethereum-waffle/ens@4.0.0-alpha.4":
-  version "4.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/ens/-/ens-4.0.0-alpha.4.tgz#318bdee6bd71bef174b51ae147dc5771fd1ced6e"
-  integrity sha512-Q3I2+JWqg51xcy2Tf3o7qdLad1KJWR1lgTG0RyrHeeam0M9nVWr3X6h14gUvrQNyp5HHBlTsqlG5NoEeTUz5PQ==
+"@ethereum-waffle/ens@4.0.0-alpha.5":
+  version "4.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/ens/-/ens-4.0.0-alpha.5.tgz#4d7040c363a313f6ac270845227eb2ab3960d7c3"
+  integrity sha512-grkWpuUYJqJDz90NwZs8SBtgfhmEQ0X13jV3R5CmbzRqC29OiQ8TjT8yFhpvZkV2X8+t6QblBaU5cZzdzw/1AQ==
   dependencies:
     "@ensdomains/ens" "^0.4.4"
     "@ensdomains/resolver" "^0.2.4"
     ethers "^5.6.1"
 
-"@ethereum-waffle/mock-contract@4.0.0-alpha.4":
-  version "4.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/mock-contract/-/mock-contract-4.0.0-alpha.4.tgz#58fb0441d875ef906c9337ff678d995e814846ab"
-  integrity sha512-8nz+PHb48s9PLVLG0EVV5MJLJ0CTMDcK3KYZq0HxmdZMJKTtJNFuNjGo07VhdY8rlv/JNXphhjitUTlGC+yY0A==
+"@ethereum-waffle/mock-contract@4.0.0-alpha.5":
+  version "4.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/mock-contract/-/mock-contract-4.0.0-alpha.5.tgz#5d325ae2b24c772cd85981fcd05d6780daab3866"
+  integrity sha512-3gTh6QuNrBPFb/KHlIBVF7trmefNXLClhwpI8RflAkv5GLVpCLAfNRixDxnWAxKOtjt0RWNVpf9c0Dk2zhhuXQ==
   dependencies:
     "@ethersproject/abi" "^5.6.0"
     ethers "^5.6.1"
 
-"@ethereum-waffle/provider@4.0.0-alpha.4":
-  version "4.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/provider/-/provider-4.0.0-alpha.4.tgz#55724f2f56fa560b5481064190464c4f750b978d"
-  integrity sha512-SrF7KQnqt/wFedcjagZOLy6xaGmm5egQZdrqquWZHj4FWVjDCmREbnrG07P2mJchmxfOPLEozEidhGRrXo7Auw==
+"@ethereum-waffle/provider@4.0.0-alpha.5":
+  version "4.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/provider/-/provider-4.0.0-alpha.5.tgz#727f781c97673b7806061b84fa4ab1942dc12d3f"
+  integrity sha512-voAvDyl3Fn7qkoyJesk3/HPFc/f2p5HevGC64A2+mXwhNd9mdCWvOsYfLIqFgRsJO2AyFXEcoWM7fYq5pJ7nQA==
   dependencies:
-    "@ethereum-waffle/ens" "4.0.0-alpha.4"
+    "@ethereum-waffle/ens" "4.0.0-alpha.5"
     "@ganache/ethereum-options" "0.1.4"
     ethers "^5.6.1"
     ganache "7.0.3"
@@ -663,10 +663,10 @@
   dependencies:
     node-gyp-build "4.3.0"
 
-"@typechain/ethers-v5@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-9.0.0.tgz#6aa93bea7425c0463bd8a61eea3643540ef851bd"
-  integrity sha512-bAanuPl1L2itaUdMvor/QvwnIH+TM/CmG00q17Ilv3ZZMeJ2j8HcarhgJUZ9pBY1teBb85P8cC03dz3mSSx+tQ==
+"@typechain/ethers-v5@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-10.0.0.tgz#1b6e292d2ed9afb0d2f7a4674cc199bb95bad714"
+  integrity sha512-Kot7fwAqnH96ZbI8xrRgj5Kpv9yCEdjo7mxRqrH7bYpEgijT5MmuOo8IVsdhOu7Uog4ONg7k/d5UdbAtTKUgsA==
   dependencies:
     lodash "^4.17.15"
     ts-essentials "^7.0.1"
@@ -1873,15 +1873,15 @@ ethereum-cryptography@^0.1.3:
     secp256k1 "^4.0.1"
     setimmediate "^1.0.5"
 
-ethereum-waffle@4.0.0-alpha.4:
-  version "4.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/ethereum-waffle/-/ethereum-waffle-4.0.0-alpha.4.tgz#a4f816fef5aa8c54488f31bfb1193a30ddee9b2d"
-  integrity sha512-d4H31hd5GKgxcWEijoBSCiiPLbu4nfqmx18oIYejUss4NJztFfrtGvXLXuyzRtLPZdM5Pscf14egXMikLZ536w==
+ethereum-waffle@4.0.0-alpha.5:
+  version "4.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/ethereum-waffle/-/ethereum-waffle-4.0.0-alpha.5.tgz#1b441cf62d6dee98c7aece59fff4467feb118f37"
+  integrity sha512-eRHCoHO8QuKg/RE4FgvPOD6zeBIi1cEmUWIe/UpSYSwtdcGdNlPz1+qu5k79sqJDILinFu91ZtwdhefarCRGsA==
   dependencies:
-    "@ethereum-waffle/chai" "4.0.0-alpha.4"
-    "@ethereum-waffle/compiler" "4.0.0-alpha.4"
-    "@ethereum-waffle/mock-contract" "4.0.0-alpha.4"
-    "@ethereum-waffle/provider" "4.0.0-alpha.4"
+    "@ethereum-waffle/chai" "4.0.0-alpha.5"
+    "@ethereum-waffle/compiler" "4.0.0-alpha.5"
+    "@ethereum-waffle/mock-contract" "4.0.0-alpha.5"
+    "@ethereum-waffle/provider" "4.0.0-alpha.5"
     ethers "^5.6.1"
     solc "^0.6.3"
     typechain "^8.0.0"
