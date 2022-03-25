@@ -55,18 +55,18 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@ethereum-waffle/chai@4.0.0-alpha.3":
-  version "4.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/chai/-/chai-4.0.0-alpha.3.tgz#a7a9718dc69fd9ca76f0dfe8c3f7d400f179cae0"
-  integrity sha512-6AvCIzhMBqQyYoO/3kGkQIyf8vZNqF3+5Qu5TRanyY3khllkL0qeT9z6x5UqR61DXdtuTLzBbyLlkcgxwXgE7Q==
+"@ethereum-waffle/chai@4.0.0-alpha.4":
+  version "4.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/chai/-/chai-4.0.0-alpha.4.tgz#f94d271df79dab7720ac4fbe4d5b3c8b4ddfcda6"
+  integrity sha512-vJRQsCkN4eeFigK6T+mriNfJcvrT2k0AFME4TD/J8Ch3UyluhtFNefHehzxM1i7Ga0FkZmA22DNFtvO5LTxrZA==
   dependencies:
-    "@ethereum-waffle/provider" "4.0.0-alpha.3"
+    "@ethereum-waffle/provider" "4.0.0-alpha.4"
     ethers "^5.6.1"
 
-"@ethereum-waffle/compiler@4.0.0-alpha.3":
-  version "4.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/compiler/-/compiler-4.0.0-alpha.3.tgz#ceab9f42e35a8f0e9369d292cd2b8bc3d97afdd0"
-  integrity sha512-HCOUF2gAtzd6cRil9d3CObKKl8MCw/j2X/El+DBEFOA71ZtkECjPm4kW9lz7l23nEMFg6nFk3nGuFUMBdtrGrQ==
+"@ethereum-waffle/compiler@4.0.0-alpha.4":
+  version "4.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/compiler/-/compiler-4.0.0-alpha.4.tgz#3fda51ade0baecfea85e0d18cc945603dfb1ec66"
+  integrity sha512-enpZ9QDwIyfusmDYB/2M2O1BuJvd7hBdneqfshVDWouI2mzu8xNlfWB5U3dw1KXQ88rbbffbS2BV2T1eLRzUzg==
   dependencies:
     "@ethersproject/abi" "^5.6.0"
     "@ethersproject/bytes" "^5.6.0"
@@ -79,29 +79,29 @@
     mkdirp "^0.5.1"
     node-fetch "^2.6.7"
 
-"@ethereum-waffle/ens@4.0.0-alpha.3":
-  version "4.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/ens/-/ens-4.0.0-alpha.3.tgz#3a834676dbf47a7b3d15c5be7df31a2db9f547be"
-  integrity sha512-x7dxSthsAoTd1UAhHdFL8R+lWP66qt/HgnaY5L54NH3CTufnCREzPCnKRpER9XCc8OAPzS9Jf6+T2VUGLxO8NQ==
+"@ethereum-waffle/ens@4.0.0-alpha.4":
+  version "4.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/ens/-/ens-4.0.0-alpha.4.tgz#318bdee6bd71bef174b51ae147dc5771fd1ced6e"
+  integrity sha512-Q3I2+JWqg51xcy2Tf3o7qdLad1KJWR1lgTG0RyrHeeam0M9nVWr3X6h14gUvrQNyp5HHBlTsqlG5NoEeTUz5PQ==
   dependencies:
     "@ensdomains/ens" "^0.4.4"
     "@ensdomains/resolver" "^0.2.4"
     ethers "^5.6.1"
 
-"@ethereum-waffle/mock-contract@4.0.0-alpha.3":
-  version "4.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/mock-contract/-/mock-contract-4.0.0-alpha.3.tgz#f2090d290b44900622dde2784392a876fecbd5c3"
-  integrity sha512-/Ne6VfCiliTWHY8etVss7kz/DUKRNXvuw+F1cdA19VTh6ruucC7bHn5b7OfXJDLUql0ylRsDXCHd3i6E8rAfHg==
+"@ethereum-waffle/mock-contract@4.0.0-alpha.4":
+  version "4.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/mock-contract/-/mock-contract-4.0.0-alpha.4.tgz#58fb0441d875ef906c9337ff678d995e814846ab"
+  integrity sha512-8nz+PHb48s9PLVLG0EVV5MJLJ0CTMDcK3KYZq0HxmdZMJKTtJNFuNjGo07VhdY8rlv/JNXphhjitUTlGC+yY0A==
   dependencies:
     "@ethersproject/abi" "^5.6.0"
     ethers "^5.6.1"
 
-"@ethereum-waffle/provider@4.0.0-alpha.3":
-  version "4.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@ethereum-waffle/provider/-/provider-4.0.0-alpha.3.tgz#614e34267ba6d85e82c2fe8176c2d6588178bb4a"
-  integrity sha512-WUdK2Aipaz76vs8+XQ8aGNYw4tQcApmTefFX/lRtNkJXmmXbkNuuNxPQmJuoL3u37Go2dxiAQNHSUWuyh81kMQ==
+"@ethereum-waffle/provider@4.0.0-alpha.4":
+  version "4.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@ethereum-waffle/provider/-/provider-4.0.0-alpha.4.tgz#55724f2f56fa560b5481064190464c4f750b978d"
+  integrity sha512-SrF7KQnqt/wFedcjagZOLy6xaGmm5egQZdrqquWZHj4FWVjDCmREbnrG07P2mJchmxfOPLEozEidhGRrXo7Auw==
   dependencies:
-    "@ethereum-waffle/ens" "4.0.0-alpha.3"
+    "@ethereum-waffle/ens" "4.0.0-alpha.4"
     "@ganache/ethereum-options" "0.1.4"
     ethers "^5.6.1"
     ganache "7.0.3"
@@ -1489,7 +1489,7 @@ debug@^4.0.1, debug@^4.1.1:
   dependencies:
     ms "2.1.2"
 
-debug@^4.3.3:
+debug@^4.3.1, debug@^4.3.3:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -1873,18 +1873,18 @@ ethereum-cryptography@^0.1.3:
     secp256k1 "^4.0.1"
     setimmediate "^1.0.5"
 
-ethereum-waffle@4.0.0-alpha.3:
-  version "4.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/ethereum-waffle/-/ethereum-waffle-4.0.0-alpha.3.tgz#809fd9959ce2c7a75608b795de34e33b21ee33af"
-  integrity sha512-lb27jfDjl7IBIIrDOwbjfTWeV1Hki67qoN6NiQz0n8Y4HAnak3VVJdqp348PHFhY7kNRwfwd8AtJVksnB/lPRg==
+ethereum-waffle@4.0.0-alpha.4:
+  version "4.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/ethereum-waffle/-/ethereum-waffle-4.0.0-alpha.4.tgz#a4f816fef5aa8c54488f31bfb1193a30ddee9b2d"
+  integrity sha512-d4H31hd5GKgxcWEijoBSCiiPLbu4nfqmx18oIYejUss4NJztFfrtGvXLXuyzRtLPZdM5Pscf14egXMikLZ536w==
   dependencies:
-    "@ethereum-waffle/chai" "4.0.0-alpha.3"
-    "@ethereum-waffle/compiler" "4.0.0-alpha.3"
-    "@ethereum-waffle/mock-contract" "4.0.0-alpha.3"
-    "@ethereum-waffle/provider" "4.0.0-alpha.3"
+    "@ethereum-waffle/chai" "4.0.0-alpha.4"
+    "@ethereum-waffle/compiler" "4.0.0-alpha.4"
+    "@ethereum-waffle/mock-contract" "4.0.0-alpha.4"
+    "@ethereum-waffle/provider" "4.0.0-alpha.4"
     ethers "^5.6.1"
     solc "^0.6.3"
-    typechain "^7.0.0"
+    typechain "^8.0.0"
 
 ethereumjs-abi@0.6.8:
   version "0.6.8"
@@ -2254,7 +2254,19 @@ glob@7.1.6:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.1.3, glob@^7.1.6:
+glob@7.1.7:
+  version "7.1.7"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.7.tgz#3b193e9233f01d42d0b3f78294bbeeb418f94a90"
+  integrity sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.4"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
+glob@^7.1.3:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
   integrity sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==
@@ -3427,10 +3439,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@^2.1.2:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
-  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+prettier@^2.3.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.1.tgz#d472797e0d7461605c1609808e27b80c0f9cfe17"
+  integrity sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==
 
 printj@~1.3.1:
   version "1.3.1"
@@ -4161,19 +4173,19 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-typechain@^7.0.0, typechain@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/typechain/-/typechain-7.0.1.tgz#65411991327a7031895b1d57b7e0ce7fc9c66376"
-  integrity sha512-4c+ecLW4mTiKwTDdofiN8ToDp7TkFC2Bzp2Pt/+qeKzkmELWzy2eDjCiv0IWHswAZhE2y9KXBhTmShzhIzD+LQ==
+typechain@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/typechain/-/typechain-8.0.0.tgz#a5dbe754717a7e16247df52b5285903de600e8ff"
+  integrity sha512-rqDfDYc9voVAhmfVfAwzg3VYFvhvs5ck1X9T/iWkX745Cul4t+V/smjnyqrbDzWDbzD93xfld1epg7Y/uFAesQ==
   dependencies:
     "@types/prettier" "^2.1.1"
-    debug "^4.1.1"
+    debug "^4.3.1"
     fs-extra "^7.0.0"
-    glob "^7.1.6"
+    glob "7.1.7"
     js-sha3 "^0.8.0"
     lodash "^4.17.15"
     mkdirp "^1.0.4"
-    prettier "^2.1.2"
+    prettier "^2.3.1"
     ts-command-line-args "^2.2.0"
     ts-essentials "^7.0.1"
 
