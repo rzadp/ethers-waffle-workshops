@@ -1,15 +1,24 @@
 import {expect, use} from 'chai';
 import {deployContract, MockProvider, solidity} from 'ethereum-waffle';
-import {WaffleTokenReady, WaffleTokenReady__factory} from '../build/types'; // TODO: replace with WaffleToken and use your own version
+
+/**
+ * Uncomment for ready-made ERC20 token:
+ */
+import {WaffleTokenReady as WaffleToken, WaffleTokenReady__factory as WaffleToken__factory} from '../build/types';
+
+/**
+ * Uncomment for your own ERC20 token:
+ */
+// import {WaffleToken, WaffleToken__factory} from '../build/types';
 
 use(solidity);
 
 describe('WaffleToken', () => {
   const [alice, bob] = new MockProvider().getWallets();
-  let token: WaffleTokenReady;
+  let token: WaffleToken;
 
   beforeEach(async () => {
-    token = await deployContract(alice, WaffleTokenReady__factory, [1000]);
+    token = await deployContract(alice, WaffleToken__factory, [1000]);
   });
 
   it('Has a proper metadata', async () => {
