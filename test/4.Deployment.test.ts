@@ -12,7 +12,7 @@ const PRIVATE_KEY = defaultAccounts[0].secretKey
  * Use with `start-ganache` script.
  */
 
-describe('Deployment', () => {
+describe.skip('Deployment', () => {
   let provider: providers.BaseProvider
   let token: WaffleToken;
   let deployer: Wallet
