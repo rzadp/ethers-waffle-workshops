@@ -4,7 +4,7 @@
 
 ```
 git clone https://github.com/rzadp/ethers-waffle-workshops
-cd ethers-waffle-workshop
+cd ethers-waffle-workshops
 yarn
 yarn build
 yarn test
