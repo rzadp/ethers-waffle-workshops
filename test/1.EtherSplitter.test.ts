@@ -1,5 +1,6 @@
 import {expect, use} from 'chai';
 import {deployContract, MockProvider, solidity} from 'ethereum-waffle';
+import { Wallet } from 'ethers';
 
 /**
  * Uncomment for implementing your own Ether Splitter
@@ -13,11 +14,19 @@ import {EtherSplitter, EtherSplitter__factory} from '../build/types';
 
 use(solidity);
 
-describe('Ether Splitter', () => {
-  const [alice, bob, charlie, david] = new MockProvider().getWallets();
+describe.only('Ether Splitter', () => {
+  let alice: Wallet
+  let bob: Wallet
+  let charlie: Wallet
+  let david: Wallet
+  let provider: MockProvider
   let splitter: EtherSplitter;
 
   beforeEach(async () => {
+    provider = new MockProvider()
+    ;([alice, bob] = provider.getWallets())
+    charlie = Wallet.createRandom().connect(provider)
+    david = Wallet.createRandom().connect(provider)
     splitter = await deployContract(alice, EtherSplitter__factory, []);
   });
 
