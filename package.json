@@ -11,7 +11,7 @@
     "build:ts": "tsc --noEmit",
     "build": "yarn build:sol && yarn build:ts",
     "flatten": "waffle flatten",
-    "test": "mocha -r ts-node/register/transpile-only 'test/**/*.test.ts'",
+    "test": "mocha 'test/**/*.test.ts'",
     "start-ganache": "ts-node -r ts-node/register/transpile-only ./src/start-ganache.ts"
   },
   "devDependencies": {
