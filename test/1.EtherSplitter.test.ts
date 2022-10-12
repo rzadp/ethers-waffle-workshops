@@ -14,6 +14,7 @@ import {EtherSplitter, EtherSplitter__factory} from '../build/types';
 
 use(solidity);
 
+// Focused tests for the workshops involving EtherSplitter only
 describe.only('Ether Splitter', () => {
   let alice: Wallet
   let bob: Wallet
