@@ -1,5 +1,29 @@
 # ethers-waffle-workshops
 
+## Prerequisites
+
+1. Node
+
+Check that it is installed:
+
+```
+node --version
+```
+
+2. Yarn
+
+Check that it is installed:
+
+```
+yarn --version
+```
+
+Or install it:
+
+```
+npm i -g yarn@1.22.17
+```
+
 ## Start the workshops
 
 ```
