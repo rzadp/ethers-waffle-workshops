@@ -2,20 +2,11 @@ import {expect, use} from 'chai';
 import {deployContract, MockProvider, solidity} from 'ethereum-waffle';
 import { Wallet } from 'ethers';
 
-/**
- * Uncomment for implementing your own Ether Splitter
- */
 import {EtherSplitter, EtherSplitter__factory} from '../build/types';
-
-/**
- * Uncomment for a ready-made Ether Splitter
- */
-//  import {EtherSplitterReady as EtherSplitter, EtherSplitterReady__factory as EtherSplitter__factory} from '../build/types';
 
 use(solidity);
 
-// Focused tests for the workshops involving EtherSplitter only
-describe.only('Ether Splitter', () => {
+describe('Ether Splitter', () => {
   let alice: Wallet
   let bob: Wallet
   let charlie: Wallet
