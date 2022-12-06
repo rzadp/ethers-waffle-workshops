@@ -1,4 +1,4 @@
-import {use} from 'chai';
+import {expect, use} from 'chai';
 import {deployContract, MockProvider, solidity} from 'ethereum-waffle';
 
 import {WaffleToken, WaffleToken__factory} from '../build/types';
@@ -11,5 +11,11 @@ describe('WaffleToken', () => {
 
   beforeEach(async () => {
     token = await deployContract(alice, WaffleToken__factory, [1000]);
+  });
+
+  it('Has a proper metadata', async () => {
+    expect(await token.name()).to.equal('WaffleToken');
+    expect(await token.symbol()).to.equal('WFL');
+    expect(await token.decimals()).to.equal(18);
   });
 });
